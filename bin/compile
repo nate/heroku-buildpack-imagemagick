@@ -29,7 +29,6 @@ function package_download() {
   remote="$1"
   location="$2"
 
-  rm -rf $location
   mkdir -p $location
   package="http://s3.amazonaws.com/${S3_BUCKET}/${remote}"
   echo "Downloading $package" | arrow
